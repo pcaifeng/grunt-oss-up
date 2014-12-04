@@ -29,7 +29,8 @@ module.exports = function(grunt) {
              * @param src  --grunt task files' src
              */
 			objectGen: function(dest, src){
-				return [dest, path.basename(src)].join('\/');
+				// return [dest, path.basename(src)].join('\/');
+				return [dest, src].join('\/');
 			}
 		});
 		
